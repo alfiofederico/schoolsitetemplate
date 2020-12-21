@@ -11,5 +11,5 @@
     //send email
     mail($admin_email, "New Form Submission", $message . ' - ' . $phone, "From:" . $email);
     
-    header('Location: http://127.0.0.1:5500/success.html');
+    header('Location: https://ecstatic-shaw-053ff5.netlify.app/success.html');
   }
