@@ -178,6 +178,13 @@ img{
   margin-top: 20px;
 }
 
+.callback-form textarea{
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+
+}
+
 .post {
   padding: 50px 30px;
 }
