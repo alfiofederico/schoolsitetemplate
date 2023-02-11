@@ -193,14 +193,15 @@
         <div class="column">
           <div class="column-2 bg-light">
             <h2>Contact Us</h2>
-            <form action="process.php" class="callback-form" method="POST" netlify>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="0858525a-5ee4-4847-884d-96d39fc51b84">
               <div class="form-control">
                 <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="name">
+                <input type="text" name="name" id="name" placeholder="name" required>
               </div>
               <div class="form-control">
                 <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="email">
+                <input type="email" name="email" id="email" placeholder="email" required>
               </div>
               <div class="form-control">
                 <label for="phone"></label>
@@ -208,8 +209,9 @@
               </div>
               <div class="form-control">
                 <label for="message"></label>
-                <textarea name="message" id="message" placeholder="enter message"></textarea>
+                <textarea name="message" id="message" placeholder="enter message" required></textarea>
               </div>
+              <input type="hidden" name="redirect" value="https://web3forms.com/success">
               <input type="submit" value="Send" id="submit" class="btn">
             </form>
           </div>
